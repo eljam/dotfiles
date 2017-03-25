@@ -64,15 +64,6 @@ print_success "Installing NVM Package"
 #nvm
 brew install nvm
 
-print_success "Installing Docker Package"
-#docker
-brew install docker
-brew install docker-machine
-brew install docker-compose
-brew install docker-machine-driver-xhyve
-brew install docker-machine-nfs
-brew install xhyve
-
 print_success "Installing Neovim Env"
 
 brew install fzf
@@ -86,8 +77,11 @@ brew install brew-cask
 print_success "Installing Cask App"
 brew tap caskroom/versions
 
-brew cask install cleanmymac2
-brew cask install forklift
+brew cask install kap
+brew cask install 1password
+brew cask install android-studio
+brew cask install phpstorm
+brew cask install stremio
 brew cask install google-chrome
 brew cask install macdown
 brew cask install dash
@@ -101,6 +95,7 @@ brew cask install vlc
 brew cask install iterm2
 brew cask install beamer
 brew cask install sublime-text
+brew cask install docker
 
 print_success "Cleaning"
 # Remove outdated versions from the cellar
